@@ -34,6 +34,7 @@ const LoginForm = ({ submitForm }: LoginFormProps): JSX.Element => {
 
   return (
     <LoginFormStyled className="loginform" onSubmit={handleSubmit}>
+      <h2 className="loginform-title">Sign in</h2>
       <label className="loginform-label" htmlFor="username">
         {" "}
         Username:
