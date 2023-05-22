@@ -8,6 +8,7 @@ const LayoutStyled = styled.div`
 
   h1 {
     text-align: center;
+    font-size: 25px;
   }
 `;
 export default LayoutStyled;
