@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { UserCredentials } from "../../store/user/types";
+import LoginFormStyled from "./LoginFormStyled";
 
 export interface LoginFormProps {
   submitForm: (userState: UserCredentials) => void;
@@ -32,7 +33,7 @@ const LoginForm = ({ submitForm }: LoginFormProps): JSX.Element => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <LoginFormStyled className="loginform" onSubmit={handleSubmit}>
       <label className="loginform-label" htmlFor="username">
         {" "}
         Username:
@@ -55,8 +56,10 @@ const LoginForm = ({ submitForm }: LoginFormProps): JSX.Element => {
         onChange={onChangeUserData}
         value={userState.password}
       />
-      <button disabled={!isReady}>Login</button>
-    </form>
+      <button className="loginform-button" disabled={!isReady}>
+        Login
+      </button>
+    </LoginFormStyled>
   );
 };
 

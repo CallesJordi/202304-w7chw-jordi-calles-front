@@ -1,7 +1,14 @@
 import Layout from "../Layout/Layout";
+import LoginForm from "../LoginForm/LoginForm";
 
 const App = (): JSX.Element => {
-  return <Layout />;
+  const submitForm = () => null;
+  return (
+    <>
+      <Layout />
+      <LoginForm submitForm={submitForm}></LoginForm>
+    </>
+  );
 };
 
 export default App;
