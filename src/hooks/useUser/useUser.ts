@@ -1,7 +1,7 @@
 import axios from "axios";
 import { UserCredentials } from "../../types";
 
-const apiUrl = import.meta.env.VITE_APP_URL;
+export const apiUrl = import.meta.env.VITE_APP_URL;
 
 const useUser = () => {
   const getUserToken = async (
