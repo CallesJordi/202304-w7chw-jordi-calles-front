@@ -10,7 +10,6 @@ describe("Given a useUser custom hook", () => {
         username: "blackbeard",
         password: "blackbeard",
       };
-
       const {
         result: {
           current: { getUserToken },
