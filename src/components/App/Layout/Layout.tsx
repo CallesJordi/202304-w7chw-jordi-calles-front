@@ -1,11 +1,12 @@
 import { Outlet } from "react-router-dom";
+import LayoutStyled from "./LayoutStyled";
 
 const Layout = (): JSX.Element => {
   return (
-    <>
-      <h1>Pirate Social network</h1>
+    <LayoutStyled>
+      <h1>Pirate Social Network</h1>
       <Outlet />
-    </>
+    </LayoutStyled>
   );
 };
 
