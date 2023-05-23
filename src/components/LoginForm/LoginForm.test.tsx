@@ -44,8 +44,10 @@ describe("Given a LoginForm component", () => {
     test("Then the button should be able'", async () => {
       render(<LoginForm submitForm={submitForm} />);
       const button = screen.getByRole("button");
+
       await userEvent.type(screen.getByLabelText(usernameLabelText), "jordi");
       await userEvent.type(screen.getByLabelText(passwordLabelText), "12345");
+
 
       expect(button).toBeEnabled();
     });
